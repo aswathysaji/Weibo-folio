@@ -471,6 +471,7 @@
       }
       .paragraph{
         position: static;
+        font-size: 13px;
         -ms-transform: translateY(0%);
         transform: translateY(0%);
       }
@@ -490,6 +491,12 @@
         height: 50px;
         position: relative;
         border-radius: 25px;
+      }
+      
+       .experience-timeline ul li p{
+        font-size: 13px; 
+        color: #45505b ;
+        line-height: 1.5rem;
       }
       
       .date{
