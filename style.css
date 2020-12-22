@@ -209,8 +209,8 @@
 /* education*/
 
 .section-title h1{
-  margin-top: 0;
-  text-align: center;
+    margin-top: 0;
+    text-align: center;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
     color: #2d6187;
@@ -272,6 +272,72 @@
 .education-content p{
   line-height: 1.5rem;
   color:  #45505b;
+}
+
+/* skill section */
+
+
+.skill{
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+}
+
+@media screen and (min-width:600px){
+  .skill{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (max-width:600px){
+  .skill{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .list label{
+    font-size: 13px;
+  }
+}
+
+.skill .set{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 24px;
+  border-radius: 16px;
+  border-top: 3px solid #eff8ff;
+  border-left: 3px solid #eff8ff;
+  box-shadow: 0px 12px 16px #36363624;
+}
+
+.set span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  height: 80px;
+  color: white;
+  font-size: 48px;
+  background-color: #0563bb;
+  margin-inline: auto;
+  border-radius: 35%;
+}
+
+
+.set h3{
+  padding-block: 24px;
+  font-size: 24px;
+  color: #45505b;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.set .list{
+  padding-block: 8px;
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+  color:#45505b ;
+  opacity: 0.8;
 }
 
 @media(min-width:1024px){
