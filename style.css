@@ -806,7 +806,16 @@
       .certificate-img img{
         width:50%;
       }
-            #contact p{
+      #contact p{
         font-size: 13px;
+      }
+      .card{
+        height: 100px;
+      }
+      .card-icon{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px !important;
       }
   }
