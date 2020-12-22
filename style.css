@@ -257,6 +257,12 @@
   margin: 0 auto;
 }
 
+.certificate-img img{
+  width:20%;
+  display: block;
+  margin: 0 auto;
+}
+
 .education-content{
   text-align: center;
   font-family: 'Spartan', sans-serif;
@@ -339,6 +345,14 @@
   color:#45505b ;
   opacity: 0.8;
 }
+
+/* Certifications */
+
+#cerifications{
+  margin-top: 5%;
+}
+
+/* contact */
 
 @media(min-width:1024px){
   .experience-timeline{
@@ -711,5 +725,8 @@
 
       .education-content p{
         font-size: 13px;
+      }
+      .certificate-img img{
+        width:50%;
       }
   }
