@@ -806,4 +806,7 @@
       .certificate-img img{
         width:50%;
       }
+            #contact p{
+        font-size: 13px;
+      }
   }
