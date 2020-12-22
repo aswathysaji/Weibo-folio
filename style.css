@@ -13,57 +13,6 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Spartan', sans-serif;*/
   }
-  #hero{
-    width: 100%;
-    height: 100vh;
-    background: url(./images/hero-bg.jpg) top right;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-  }
-
-  #hero:before {
-    content: "";
-    background: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  #hero h1 {
-    margin-top: 17%;
-    margin-left: 10%;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 56px;
-    position: absolute;
-    color: #394867;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  #hero p{
-    margin-top: 22%;
-    margin-left: 10%;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 56px;
-    position: absolute;
-    color: #2d6187;
-    font-family: 'Poppins', sans-serif;
-  }
-  .social-media{
-      position:relative;
-      color: #0f3460;
-      margin-top: 27%;
-      margin-left: 10%;
-  }
-  .social-media a{
-      padding-right: 2%;
-      color: #0f3460;
-      font-size: 1.2rem;
-  }
   /* Navbar */
   .nav {
     height: 50px;
@@ -121,7 +70,78 @@
     display: none;
   }
 
-  /* About */
+/* hero section */
+
+  #hero{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/hero-bg.jpg) top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  #hero:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #hero h1 {
+    margin-top: 13%;
+    margin-left: 10%;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    position: absolute;
+    color: #394867;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  #hero p{
+    margin-top: 18%;
+    margin-left: 10%;
+    font-size: 30px;
+    line-height: 56px;
+    position: absolute;
+    color: #2d6187;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .social-media{
+      position:relative;
+      color: #0f3460;
+      margin-top: 23%;
+      margin-left: 10%;
+  }
+  .social-media a{
+      padding-right: 2%;
+      color: #0f3460;
+      font-size: 1.2rem;
+  }
+  .social-media a:hover{
+      color:#0563bb ;
+  }
+
+  .button{
+    margin-top: 1%;
+    margin-left: 10%;
+    height: 40px;
+    width: 20%;
+    background-image: linear-gradient(to right, #0278ae, #153e90 );
+    border:none;
+    color: white;
+    position: absolute;
+    border-radius: 4rem;
+}
+.button:hover{
+   background-image: linear-gradient(to right,#153e90, #0278ae );
+}
+
+    /* About */
 
   #about h1,#experience h1{
     text-align: center;
@@ -130,6 +150,7 @@
     color: #2d6187;
     position: relative;
   }
+
 
   #about h1::before,#experience h1::before{
     content: '';
@@ -181,11 +202,60 @@
 
 /* experience */
 
+#experience{
+  margin-top: 5%;
+}
+
+/* education*/
+
+.section-title h1{
+  margin-top: 0;
+  text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: #2d6187;
+    position: relative;
+}
+
+.section-title h1::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #a7c5eb;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h1::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.curved{
+  background: #eff8ff;
+}
+
+.curved svg{
+  display: block;
+}
+
+.curved.upper{
+  background: #fff;
+}
+
 @media(min-width:1024px){
   .experience-timeline{
     position: relative;
     margin: 50px auto;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     width: 1000px;
     box-sizing: border-box;
   }
@@ -195,7 +265,7 @@
     position: absolute;
     left: 50%;
     width: 2px;
-    height: 90%;
+    height: 100%;
     background:#c5c5c5;
   }
   
@@ -303,7 +373,7 @@
   }
   
 }
-  @media (max-width:768px) {
+  @media (max-width:992px) {
     #hero:before{
       background: rgba(255, 255, 255, 0.7);
     }
@@ -338,6 +408,17 @@
     }
     .para{
       margin-right: 3%;
+    }
+    .button-div{
+      margin-left: 28%;
+    }
+    .button{
+      font-size: 19px;
+      height: 50px;
+      margin-top: 4%;
+      width: 40%;
+      margin-left:0;
+      text-align: center;
     }
     .experience-timeline ul{
       margin: 0;
@@ -456,6 +537,17 @@
         color: #0f3460;
         font-size: 1rem;
     }
+    .button-div{
+      margin-left: 23%;
+    }
+    .button{
+      height: 35px;
+      font-size: 13px;
+      margin-top: 4%;
+      width: 50%;
+      margin-left:0;
+      text-align: center;
+    }
     #about h1,#experience h1{
         text-align: center;
         font-size: 40px;
@@ -492,8 +584,7 @@
         position: relative;
         border-radius: 25px;
       }
-      
-       .experience-timeline ul li p{
+      .experience-timeline ul li p{
         font-size: 13px; 
         color: #45505b ;
         line-height: 1.5rem;
@@ -520,4 +611,8 @@
         font-size: 1.1rem;
         color: #0563bb;
       }
+      
+.section-title h1{
+     font-size: 40px;
+}
   }
