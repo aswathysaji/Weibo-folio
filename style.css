@@ -251,6 +251,29 @@
   background: #fff;
 }
 
+.education-img img{
+  width:15%;
+  display: block;
+  margin: 0 auto;
+}
+
+.education-content{
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+}
+
+.education-content h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color:#0563bb ;
+}
+
+.education-content p{
+  line-height: 1.5rem;
+  color:  #45505b;
+}
+
 @media(min-width:1024px){
   .experience-timeline{
     position: relative;
@@ -612,7 +635,15 @@
         color: #0563bb;
       }
       
-.section-title h1{
-     font-size: 40px;
-}
+      .section-title h1{
+          font-size: 40px;
+      }
+
+      .education-content h3{
+        font-size: 20px;
+      }
+
+      .education-content p{
+        font-size: 13px;
+      }
   }
